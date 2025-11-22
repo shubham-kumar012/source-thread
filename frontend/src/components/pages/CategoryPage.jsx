@@ -6,6 +6,7 @@ import { motion } from 'framer-motion';
 const CategoryPage = () => {
   const { slug } = useParams();
   const [category, setCategory] = useState(null);
+  const URL = process.env.REACT_APP_API_URL;
 
   const fadeSlideUp = {
         hidden: { opacity: 0, y: 40 },
@@ -16,7 +17,7 @@ const CategoryPage = () => {
 
   useEffect(() => {
     axios
-      .get(`http://localhost:1337/api/categories?filters[slug][$eq]=${slug}&populate[posts][populate][0]=bannerImage`)
+      .get(`${URL}/api/categories?filters[slug][$eq]=${slug}&populate[posts][populate][0]=bannerImage`)
       .then((res) => {
         const data = res.data.data[0];
         setCategory(data);
@@ -54,7 +55,7 @@ const CategoryPage = () => {
                   <motion.div
                     className="absolute inset-0 bg-cover bg-center"
                     style={{
-                      backgroundImage: `url(http://localhost:1337${blog.bannerImage?.url})`,
+                      backgroundImage: `url(${URL}${blog.bannerImage?.url})`,
                     }}
                     variants={{
                       rest: { scale: 1 },

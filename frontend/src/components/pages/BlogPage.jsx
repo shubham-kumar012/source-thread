@@ -5,10 +5,11 @@ import axios from 'axios';
 const BlogPage = () => {
     const { slug } = useParams();
     const [blog, setBlog] = useState(null);
+    const URL = process.env.REACT_APP_API_URL;
 
     useEffect(() => {
         axios
-            .get(`http://localhost:1337/api/posts?filters[slug][$eq]=${slug}&populate[0]=bannerImage&populate[1]=author`)
+            .get(`${URL}/api/posts?filters[slug][$eq]=${slug}&populate[0]=bannerImage&populate[1]=author`)
             .then((res) => {
                 const post = res.data.data[0];
                 setBlog(post);
@@ -39,7 +40,7 @@ const BlogPage = () => {
                 {imageUrl && (
                     <div className="w-full aspect-video rounded-2xl overflow-hidden mb-10 flex justify-center items-center">
                         <img
-                            src={`http://localhost:1337${imageUrl}`}
+                            src={`${URL}${imageUrl}`}
                             alt={title}
                             className="w-full h-full object-fit"
                         />

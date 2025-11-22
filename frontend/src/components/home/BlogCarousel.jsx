@@ -3,12 +3,14 @@ import axios from "axios";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 
+
 const CategorySection = () => {
     const [categories, setCategories] = useState([]);
+    const URL = process.env.REACT_APP_API_URL;
 
     useEffect(() => {
         axios
-            .get("http://localhost:1337/api/categories?populate[posts][populate][0]=bannerImage")
+            .get(`${URL}/api/categories?populate[posts][populate][0]=bannerImage`)
             .then((res) => setCategories(res.data.data))
             .catch((err) => console.error(err));
     }, []);
@@ -75,7 +77,7 @@ const CategorySection = () => {
                                         <motion.div
                                             className="absolute inset-0 bg-cover bg-center"
                                             style={{
-                                                backgroundImage: `url(http://localhost:1337${blog.bannerImage?.url})`,
+                                                backgroundImage: `url(${URL}${blog.bannerImage?.url})`,
                                             }}
                                             variants={{
                                                 rest: { scale: 1 },
