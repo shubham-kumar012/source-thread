@@ -17,7 +17,7 @@ const BlogPage = () => {
             .catch((err) => console.error(err));
     }, [slug]);
 
-    if (!blog) return <div className="text-white p-10">Loading...</div>;
+    if (!blog) return <div className="mt-20 text-2xl flex justify-center items-center text-white p-10">Loading...</div>;
 
     const { title, content, publishedAt, bannerImage, author } = blog;
     const imageUrl = bannerImage?.url;
@@ -40,7 +40,7 @@ const BlogPage = () => {
                 {imageUrl && (
                     <div className="w-full aspect-video rounded-2xl overflow-hidden mb-10 flex justify-center items-center">
                         <img
-                            src={`${URL}${imageUrl}`}
+                            src={`${imageUrl}`}
                             alt={title}
                             className="w-full h-full object-fit"
                         />

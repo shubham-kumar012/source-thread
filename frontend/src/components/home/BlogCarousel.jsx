@@ -77,7 +77,7 @@ const CategorySection = () => {
                                         <motion.div
                                             className="absolute inset-0 bg-cover bg-center"
                                             style={{
-                                                backgroundImage: `url(${URL}${blog.bannerImage?.url})`,
+                                                backgroundImage: `url(${blog.bannerImage?.url})`,
                                             }}
                                             variants={{
                                                 rest: { scale: 1 },
