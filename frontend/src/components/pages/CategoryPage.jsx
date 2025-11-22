@@ -6,7 +6,7 @@ import { motion } from 'framer-motion';
 const CategoryPage = () => {
   const { slug } = useParams();
   const [category, setCategory] = useState(null);
-  const URL = process.env.REACT_APP_API_URL;
+  const URL = import.meta.env.VITE_APP_API_URL;
 
   const fadeSlideUp = {
         hidden: { opacity: 0, y: 40 },

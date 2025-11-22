@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 
 const CategorySection = () => {
     const [categories, setCategories] = useState([]);
-    const URL = process.env.REACT_APP_API_URL;
+    const URL = import.meta.env.VITE_APP_API_URL;
 
     useEffect(() => {
         axios

@@ -5,7 +5,7 @@ import axios from 'axios';
 const BlogPage = () => {
     const { slug } = useParams();
     const [blog, setBlog] = useState(null);
-    const URL = process.env.REACT_APP_API_URL;
+    const URL = import.meta.env.VITE_APP_API_URL;
 
     useEffect(() => {
         axios
