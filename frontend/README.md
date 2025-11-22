@@ -1,16 +1,55 @@
-# React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# 🌐 SourceThread — Frontend (React + Vite)
 
-Currently, two official plugins are available:
+This is the frontend UI for **SourceThread**, a blog platform powered by React, TailwindCSS, Framer Motion animations, and content fetched from Strapi CMS.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-## React Compiler
+---
+## Live Demo
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Frontend (Netlify): [Click Here](https://source-thread.netlify.app/)
 
-## Expanding the ESLint configuration
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+## Tech Stack
+- React (Vite)
+- TailwindCSS
+- Framer Motion
+- Axios
+- React Router
+
+---
+# How to run Locally
+### 1. Clone the Repository
+```bash
+git clone https://github.com/shubham-kumar012/source-thread.git
+cd source-thread
+```
+
+---
+## ⚙️ Environment Variables
+Create `.env`:
+```bash
+VITE_API_URL=https://your-strapi-backend.onrender.com
+```
+
+## 💻Run Locally
+Install dependencies: 
+```bash
+npm install
+```
+Run dev server:
+```bash
+npm run develop
+```
+
+
+---
+## Author🙋‍♂️
+**Name:**  Shubham Kumar
+
+**Email:** shubhampal7083@gmail.com
+
+**Github:** [shubham-kumar012](https://github.com/shubham-kumar012)
+
+**LinkedIn:** [Shubham Kumar](https://linkedin.com/in/shubham-kumar-111041267)
