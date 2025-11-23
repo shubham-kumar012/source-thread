@@ -14,7 +14,7 @@ Strapi Admin Panel (Render): [Click Here](https://source-thread.onrender.com/)
 ### Test Admin Account -
 Use this test account to explore the Strapi Admin Panel:
 ```bash
-Email: test.assesment@gmail.com
+Email: test.assessment@gmail.com
 Password: Test@123
 ```
 
