@@ -11,6 +11,8 @@ Frontend (Netlify): [Click Here](https://source-thread.netlify.app/)
 
 Strapi Admin Panel (Render): [Click Here](https://source-thread.onrender.com/)
 
+Ensure to run the admin pannel first(untill login page appear) then the frontend website, othrewise main website content may not be load.
+
 ### Test Admin Account -
 Use this test account to explore the Strapi Admin Panel:
 ```bash
