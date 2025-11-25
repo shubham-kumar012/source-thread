@@ -3,7 +3,6 @@
 
 Source Thread is a simple and modern blog website built with **Strapi (backend)** and **React + Vite (frontend)**. It lets you easily create blogs from an admin panel and shows them on a fast, responsive, and animated frontend. The project is fully deployed using **Render (backend + database)** and **Netlify (frontend)**, and includes everything you need to run it locally.
 
----
 
 ---
 # Live Demo
@@ -12,27 +11,25 @@ Frontend (Netlify): [Click Here](https://source-thread.netlify.app/)
 
 Strapi Admin Panel (Render): [Click Here](https://source-thread.onrender.com/)
 
+Ensure to run the admin pannel first(untill login page appear) then the frontend website, othrewise main website content may not be load.
+
 ### Test Admin Account -
 Use this test account to explore the Strapi Admin Panel:
 ```bash
-Email: test.assesment@gmail.com
+Email: test.assessment@gmail.com
 Password: Test@123
 ```
 
----
 
 ---
 # Project Overview
 *  SourceThread is a fully functional blog platform:
-    - dynamic categories
-    - Blog posts with banner images
-    - Beautiful UI animations (Framer Motion)
-    - Fully responsive design
-    - SEO-friendly slugs
-    - Auto-populating content from Strapi CMS
-    - Integrated admin access for content management
-
----
+    - Fully dynamic blog/content management
+    - Category-based filtering
+    - Responsive and smooth UI with Framer Motion
+    - Cloudinary image hosting
+    - PostgreSQL database (Render)
+    - Deployed frontend (Netlify) and backend (Render)
 
 ---
 # Tech Stack
@@ -46,12 +43,13 @@ Password: Test@123
 * **Backend**
     - Strapi v5 (Headless CMS)
     - PostgreSQL (Hosted on Render)
+    - Cloudinary (media upload provider)  
 
 * **Deployment**
     - Frontend -> Netlify
     - Backend API -> Render Web Service
     - Database -> Render PostgreSQL Instance
----
+    - 
 
 ---
 # How to run Locally
@@ -86,7 +84,12 @@ Frontend will start at:
 
 **NOTE:** Create a .env file inside frontend/ before running React-Vite.(Instruction are in the backend README.md file)
 
+
 ---
+# Media Handling (Cloudinary)
+
+All blog images and banners are uploaded automatically to Cloudinary using Strapi’s upload provider.
+
 
 ---
 ## Author🙋‍♂️

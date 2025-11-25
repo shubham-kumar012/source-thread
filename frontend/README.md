@@ -19,6 +19,14 @@ Frontend (Netlify): [Click Here](https://source-thread.netlify.app/)
 - React Router
 
 ---
+## Features
+- Fetches posts and categories from Strapi
+- Beautiful animated UI using Framer Motion
+- Blog cards, category pages, and single blog pages
+- Cloudinary-rendered images
+- Deployed on Netlify
+
+---
 # How to run Locally
 ### 1. Clone the Repository
 ```bash
