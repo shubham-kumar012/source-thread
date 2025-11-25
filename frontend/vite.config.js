@@ -10,7 +10,7 @@ export default defineConfig({
     tailwindcss()
   ],
   server: {
-    host: true
+    host: true,
   },
   define: {
     'process.env.VITE_APP_API_URL': JSON.stringify(process.env.VITE_APP_API_URL)
